@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Class activity">
+    <meta name="author" content="Karen Bourgeois">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 Challenge</title>
+    <link rel="stylesheet" href="./Assets/CSS/style.css"/>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="header-title">CSS Snippet Cheatsheet</h1>
+        <p class="header-para">Ever have trouble recalling the exact syntax for your favourite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automaticall select all the code for you to copy.</p>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="card">
+                <h1 class="card-header">Flexbox Row</h1>
+                <p class="card-para">Use these three properties to create a Flexbox row loayout.</p>
+                <pre><code>
+                    .row {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                    }
+                </code></pre>
+            </div>
+
+            <div class="card">
+                <h1 class="card-header">Flexbox Column</h1>
+                <p class="card-para">Use this to create a Flexbox column layout.</p>
+                <pre><code>
+                    .column {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                </code></pre>
+            </div>
+
+            <div class="card">
+                <h1 class="card-header">CSS Grid Layout</h1>
+                <p class="card-para">Build a 12-column layout using CSS Grid.</p>
+                <pre><code>
+                    .grid {
+                        display: grid;
+                        width: 100%;
+                        grid-template-columns: repeat(122, 1fr);
+                    }
+                </code></pre>
+            </div>
+
+            <div class="card">
+                <h1 class="card-header">linear-gradients</h1>
+                <p class="card-para">This will create a background linear gradient from top to bottom.</p>
+                <pre><code>
+                    .linear-gradient-background {
+                        background-image: linear-gradient(
+                            rgba(232, 102, 236, 0.3) 0%,
+                            rgba(232, 102, 236, 0.6) 100%
+                        );
+                    }
+                </code></pre>
+            </div>
+
+            <div class="card">
+                <h1 class="card-header">Box Transition Glow</h1>
+                <p class="car-para">Use transition and box shadows to glow on hover.</p>
+                <pre><code>
+                    .code-card .card-header {
+                        border-radius: 8px;
+                        transition: all 0.5s ease-in-out;
+                    }
+
+                    .code-card:hover,
+                    .code-card:hover .card-header {
+                        box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+                    }
+                </code></pre>
+            </div>
+
+            <div class="card">
+                <h1 class="card-header">Overlay Card With Title</h1>
+                <p class="car-para">Use position properties and negative maginis to rains elements higher than their natural starting point.</p>
+                <pre><code>
+                    .card-header {
+                        position: relative;
+                        margin-top: -20px;
+                    }
+                </code></pre>
+            </div>
+
+        </section>
+        
+    </main>
+
+    <footer>
+        <h2>Made with &#128151 and CSS</h2>
+    </footer>
+
+</body>
+
+</html>
